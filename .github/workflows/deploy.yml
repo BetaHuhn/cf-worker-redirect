@@ -1,0 +1,37 @@
+name: Deploy CI
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Cache node modules
+        uses: c-hive/gha-npm-cache@v1
+        
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run build command
+        run: npm run build
+
+      - name: Publish to Cloudflare with Wrangler
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+
+      - name: Commit build
+        uses: stefanzweifel/git-auto-commit-action@v4.9.2
+        with:
+          commit_message: ":rocket: Deploy new version [skip ci]"
+          commit_user_name: BetaHuhn Bot
+          commit_user_email: bot@mxis.ch
+          commit_author: BetaHuhn Bot <bot@mxis.ch>

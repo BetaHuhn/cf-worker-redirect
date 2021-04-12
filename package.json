@@ -1,0 +1,51 @@
+{
+	"name": "@betahuhn/cf-worker-starter",
+	"version": "1.0.4",
+	"description": "Starter Template for Cloudflare Workers with GitHub Actions CI and Automatic Releases",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint ./src/ --ext .ts",
+		"test:clean": "rimraf ./transpiled/src ./transpiled/test",
+		"test": "npm run test:clean && npm run transpile && mocha --require source-map-support/register --recursive transpiled/test",
+		"transpile": "tsc --project ./test",
+		"dev": "wrangler dev",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/betahuhn/workers-template.git"
+	},
+	"keywords": [
+		"template",
+		"workers",
+		"cloudflare-workers",
+		"typescript",
+		"nodejs"
+	],
+	"author": "Maximilian Schiller <schiller@mxis.ch>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/betahuhn/workers-template/issues"
+	},
+	"homepage": "https://github.com/betahuhn/workers-template#readme",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^2.2.1",
+		"@cloudflare/wrangler": "^1.15.0",
+		"@types/chai": "^4.2.16",
+		"@types/mocha": "^8.2.2",
+		"chai": "^4.3.4",
+		"mocha": "^8.3.2",
+		"rimraf": "^3.0.2",
+		"service-worker-mock": "^2.0.5",
+		"ts-loader": "^8.1.0",
+		"typescript": "^4.2.4",
+		"webpack": "^5.31.0",
+		"webpack-cli": "^4.6.0"
+	},
+	"dependencies": {
+		"@betahuhn/config": "^1.0.2",
+		"@typescript-eslint/eslint-plugin": "^4.21.0",
+		"@typescript-eslint/parser": "^4.21.0",
+		"eslint": "^7.23.0"
+	}
+}
