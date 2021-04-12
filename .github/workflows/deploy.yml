@@ -29,11 +29,3 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
         env: 
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-
-      - name: Commit build
-        uses: stefanzweifel/git-auto-commit-action@v4.9.2
-        with:
-          commit_message: ":rocket: Deploy new version [skip ci]"
-          commit_user_name: BetaHuhn Bot
-          commit_user_email: bot@mxis.ch
-          commit_author: BetaHuhn Bot <bot@mxis.ch>
