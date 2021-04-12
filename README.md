@@ -17,12 +17,17 @@ Simple URL redirection running at the edge with Cloudflare Workers and Worker KV
 
 ## 🚀 Get started
 
-1. Clone your new repository
-2. Install dependencies using `npm install`
-3. Update package details in `package.json` and `README.md`
+1. Fork your this repository
+2. Clone your new repository
+3. Install dependencies using `npm install`
+4. Update package details in `package.json` and `README.md`
    1. Find and replace `betahuhn/cf-worker-redirect` with `user/repository`
-   2. Find and replace `@betahuhn/cf-worker-redirect` with projects npm name
-4. Specify your worker details in the `wrangler.toml` file (more info in [Cloudflare's Docs](https://developers.cloudflare.com/workers/cli-wrangler/configuration))
+   2. Find and replace `@betahuhn/cf-worker-redirect` with `user/repository`
+5. Specify your worker details in the `wrangler.toml` file (more info in [Cloudflare's Docs](https://developers.cloudflare.com/workers/cli-wrangler/configuration))
+6. Setup [wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler/install-update) locally
+6. Run `wrangler publish`
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/BetaHuhn/cf-worker-redirect)
 
 ## 📚 Usage
 
