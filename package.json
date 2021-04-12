@@ -1,7 +1,7 @@
 {
-	"name": "@betahuhn/cf-worker-starter",
-	"version": "1.0.4",
-	"description": "Starter Template for Cloudflare Workers with GitHub Actions CI and Automatic Releases",
+	"name": "cf-worker-redirect",
+	"version": "0.1.0",
+	"description": "Simple URL shortener running at the edge with Cloudflare Workers and Worker KV.",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint ./src/ --ext .ts",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/betahuhn/workers-template.git"
+		"url": "git+https://github.com/betahuhn/cf-worker-redirect.git"
 	},
 	"keywords": [
 		"template",
@@ -25,9 +25,9 @@
 	"author": "Maximilian Schiller <schiller@mxis.ch>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/betahuhn/workers-template/issues"
+		"url": "https://github.com/betahuhn/cf-worker-redirect/issues"
 	},
-	"homepage": "https://github.com/betahuhn/workers-template#readme",
+	"homepage": "https://github.com/betahuhn/cf-worker-redirect#readme",
 	"devDependencies": {
 		"@cloudflare/workers-types": "^2.2.1",
 		"@cloudflare/wrangler": "^1.15.0",
