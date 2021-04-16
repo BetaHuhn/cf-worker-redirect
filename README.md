@@ -31,7 +31,7 @@ Simple URL redirection running at the edge with Cloudflare Workers and Worker KV
 
 ## 📚 Usage
 
-After you have deployed your Worker, head over to the KV section of the Workers Dashboard and select your Namespace.
+After you have deployed your Worker, head over to the [KV section of the Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers/kv/namespaces) and select your Namespace.
 
 To add a redirect, simply enter the URL path you want to redirect as the key (including the leading `/`) and the target URL as the value.
 
