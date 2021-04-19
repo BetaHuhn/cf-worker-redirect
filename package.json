@@ -30,7 +30,7 @@
 	"homepage": "https://github.com/betahuhn/cf-worker-redirect#readme",
 	"devDependencies": {
 		"@cloudflare/workers-types": "^2.2.1",
-		"@cloudflare/wrangler": "^1.15.1",
+		"@cloudflare/wrangler": "^1.16.0",
 		"@types/chai": "^4.2.16",
 		"@types/mocha": "^8.2.2",
 		"chai": "^4.3.4",
