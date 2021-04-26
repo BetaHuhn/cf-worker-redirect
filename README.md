@@ -14,6 +14,7 @@ Simple URL redirection running at the edge with Cloudflare Workers and Worker KV
 - **Simple to integrate** - *Integrate it with existing sites using Cloudflare*
 - **Easy to manage** - *Redirects are stored in Workers KV*
 - **Supports URL parameters** - *URL parameters are appended to the target URL if not already present*
+- **Works in front of an existing website** - *If no redirect is found it can pass the request to the origin*
 
 ## 🚀 Get started
 
@@ -53,11 +54,19 @@ Since a key in your KV Namespace specifies a URL path starting with `/`, you can
 
 ### 404 Page
 
-By default if a path is not found in the KV Namespace a 404 error will be returned. You can optionally redirect all 404 errors to a custom URL by adding it with the key `404`:
+By default if a path is not found in the KV Namespace a 404 error will be returned. You can optionally redirect all 404 errors to a custom URL by specifying it with the `404` key:
 
 | Key | Value |
 | ------------- | ------------- |
 | `404` | `https://example.com/404` |
+
+### In front of origin
+
+If you use the worker in front of your actual website, you can tell the worker to pass requests to the origin if no redirect is found:
+
+| Key | Value |
+| ------------- | ------------- |
+| `404` | `pass` |
 
 ### URL parameters
 
