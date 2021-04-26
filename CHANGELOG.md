@@ -1,3 +1,16 @@
+## [v1.1.0] - 2021-04-26
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.1.0) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.0.2...v1.1.0) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.1.0) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.0.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.0.tar.gz))
+
+### New features
+
+- [`3e22433`](https://github.com/betahuhn/cf-worker-redirect/commit/3e22433)  Add option to pass request along
+
+### Dependency updates
+
+- [`353c678`](https://github.com/betahuhn/cf-worker-redirect/commit/353c678)  Bump webpack from 5.35.0 to 5.35.1
+- [`6f2b1b6`](https://github.com/betahuhn/cf-worker-redirect/commit/6f2b1b6)  Bump eslint from 7.23.0 to 7.25.0
+
 ## [v1.0.2] - 2021-04-26
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.0.2) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.0.1...v1.0.2) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.0.2) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.0.2.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.0.2.tar.gz))
