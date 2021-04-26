@@ -5,15 +5,26 @@ export async function handleRequest(request: Request): Promise<Response> {
 	const url = new URL(request.url)
 	const slug = url.pathname
 
+	// Get the matching target URL from the given URL slug/path
 	const target = await REDIRECT_KV.get(slug)
 
 	if (!target) {
 		// Optionally redirect to custom page on 404
 		const errorRedirect = await REDIRECT_KV.get('404')
-		if (errorRedirect) {
+
+		if (errorRedirect === 'pass') {
+
+			// Pass the original request along
+			return fetch(request)
+
+		} else if (errorRedirect) {
+
+			// Redirect to the specified error page
 			return Response.redirect(errorRedirect, 301)
+
 		}
 
+		// Return normal 404 error
 		return new Response('Sorry, page not found.', {
 			status: 404,
 			statusText: 'page not found'
@@ -33,5 +44,6 @@ export async function handleRequest(request: Request): Promise<Response> {
 
 	const redirectTo = targetUrl.toString()
 
+	// Redirect to the target URL
 	return Response.redirect(redirectTo, 301)
 }
