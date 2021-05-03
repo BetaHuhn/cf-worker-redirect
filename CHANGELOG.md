@@ -1,3 +1,15 @@
+## [v1.1.1] - 2021-05-03
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.1.1) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.1.0...v1.1.1) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.1.1) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.1.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.1.tar.gz))
+
+### Dependency updates
+
+- [`5d4a2e2`](https://github.com/betahuhn/cf-worker-redirect/commit/5d4a2e2)  Bump @cloudflare/wrangler from 1.16.0 to 1.16.1
+- [`06f3c58`](https://github.com/betahuhn/cf-worker-redirect/commit/06f3c58)  Bump @types/chai from 4.2.16 to 4.2.17
+- [`af8cbe7`](https://github.com/betahuhn/cf-worker-redirect/commit/af8cbe7)  Bump webpack from 5.35.1 to 5.36.0
+- [`7d0de2e`](https://github.com/betahuhn/cf-worker-redirect/commit/7d0de2e)  Bump webpack from 5.36.0 to 5.36.1
+- [`92fdb49`](https://github.com/betahuhn/cf-worker-redirect/commit/92fdb49)  Bump @cloudflare/workers-types from 2.2.1 to 2.2.2
+
 ## [v1.1.0] - 2021-04-26
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.1.0) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.0.2...v1.1.0) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.1.0) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.0.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.0.tar.gz))

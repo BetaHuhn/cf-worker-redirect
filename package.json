@@ -1,6 +1,6 @@
 {
 	"name": "cf-worker-redirect",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Simple URL shortener running at the edge with Cloudflare Workers and Worker KV.",
 	"main": "index.js",
 	"scripts": {
