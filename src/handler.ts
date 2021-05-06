@@ -3,14 +3,15 @@ declare const REDIRECT_KV: KVNamespace
 
 export async function handleRequest(request: Request): Promise<Response> {
 	const url = new URL(request.url)
-	const slug = url.pathname
+	const path = url.pathname
+	const fullUrl = url.host + url.pathname
 
-	// Get the matching target URL from the given URL slug/path
-	const target = await REDIRECT_KV.get(slug)
+	// Get the matching target URL by first checking against the full url and then the path
+	const target = await REDIRECT_KV.get(fullUrl) || await REDIRECT_KV.get(path)
 
 	if (!target) {
 		// Optionally redirect to custom page on 404
-		const errorRedirect = await REDIRECT_KV.get('404')
+		const errorRedirect = await REDIRECT_KV.get(`${ url.host }/404`) || await REDIRECT_KV.get('404')
 
 		if (errorRedirect === 'pass') {
 
