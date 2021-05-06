@@ -52,13 +52,26 @@ Example:
 
 If your your Worker runs on example.com, all requests to example.com/github will be redirected to https://github.com/BetaHuhn.
 
+If you have multiple domains pointing to the same worker, you can specify the domain in front of the path to target it specifically.
+
+Example:
+
+| Key | Value |
+| ------------- | ------------- |
+| `example.com/github` | `https://github.com/BetaHuhn` |
+| `example2.com/github` | `https://github.com/` |
+| `/foo` | `https://example3.com/bar` |
+
+Both example.com/foo and example2.com/foo will redirect to example3.com/bar
+
 ### Root page
 
-Since a key in your KV Namespace specifies a URL path starting with `/`, you can also specify a redirect if a user requests the root of your page (i.e. example.com/):
+Since a key in your KV Namespace specifies a URL path with or without the domain, you can also specify a redirect if a user requests the root of your page (i.e. example.com/):
 
 | Key | Value |
 | ------------- | ------------- |
 | `/` | `https://example.com/home` |
+| `example.com/` | `https://example.com/home` |
 
 ### 404 Page
 
@@ -66,7 +79,8 @@ By default if a path is not found in the KV Namespace a 404 error will be return
 
 | Key | Value |
 | ------------- | ------------- |
-| `404` | `https://example.com/404` |
+| `404` | `https://example.com/home` |
+| `example.com/404` | `https://example.com/home` |
 
 ### In front of origin
 
@@ -75,6 +89,12 @@ If you use the worker in front of your actual website, you can tell the worker t
 | Key | Value |
 | ------------- | ------------- |
 | `404` | `pass` |
+
+You can also use the `pass` value on any other key:
+
+| Key | Value |
+| ------------- | ------------- |
+| `example.com/home` | `pass` |
 
 ### URL parameters
 
