@@ -20,15 +20,21 @@ URL redirection running at the edge with Cloudflare Workers and Worker KV.
 
 Ensure you have [`wrangler`](https://github.com/cloudflare/wrangler) installed and configured, then create a new Worker based on this repo:
 
-```
+```shell
 wrangler generate cf-worker-redirect https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
+```
+
+Next generate the wrangler.toml from the given template:
+
+```shell
+cp wranglerTemplate.toml wrangler.toml
 ```
 
 Set your account id in `wrangler.toml`, which can be found on your [Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers).
 
 Create a KV namespace for cf-worker-redirect:
 
-```
+```shell
 wrangler kv:namespace create "REDIRECT_KV"
 ```
 

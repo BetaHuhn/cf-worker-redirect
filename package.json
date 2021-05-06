@@ -9,7 +9,8 @@
 		"test": "npm run test:clean && npm run transpile && mocha --require source-map-support/register --recursive transpiled/test",
 		"transpile": "tsc --project ./test",
 		"dev": "wrangler dev",
-		"build": "webpack"
+		"build": "webpack",
+		"setup-wrangler": "cp wranglerTemplate.toml wrangler.toml"
 	},
 	"repository": {
 		"type": "git",
