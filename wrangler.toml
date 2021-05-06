@@ -5,6 +5,3 @@ account_id = ""
 route = ""
 workers_dev = true
 webpack_config = "webpack.config.js"
-kv_namespaces = [
-  { binding = "REDIRECT_KV", id = "7bf5e5b360d0467eb8646a1828681843", preview_id = "6a1ddb03f3ec250963f0a1e46820076f" }
-]
