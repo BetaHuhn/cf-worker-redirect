@@ -9,7 +9,7 @@ export async function handleRequest(request: Request): Promise<Response> {
 	// Get the matching target URL by first checking against the full url and then the path
 	const target = await REDIRECT_KV.get(fullUrl) || await REDIRECT_KV.get(path)
 
-	if (!target) {
+	if (!target || target === '404') {
 		// Optionally redirect to custom page on 404
 		const errorRedirect = await REDIRECT_KV.get(`${ url.host }/404`) || await REDIRECT_KV.get('404')
 
