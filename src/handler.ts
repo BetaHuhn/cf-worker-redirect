@@ -32,6 +32,11 @@ export async function handleRequest(request: Request): Promise<Response> {
 		})
 	}
 
+	// Pass the original request along
+	if (target === 'pass') {
+		return fetch(request)
+	}
+
 	/*
 		Combine source and target URL search parameters (target params overwrite source params)
 		Note: CF worker does not support url.searchParams.forEach
