@@ -1,3 +1,19 @@
+## [v1.2.0] - 2021-05-06
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.0) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.1.1...v1.2.0) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.0) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.0.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.0.tar.gz))
+
+### New features
+
+- [`02f81fa`](https://github.com/betahuhn/cf-worker-redirect/commit/02f81fa)  Check for full url before using path as key
+- [`80ce81b`](https://github.com/betahuhn/cf-worker-redirect/commit/80ce81b)  Use 404 value to redirect to specified 404 page
+- [`ba8877b`](https://github.com/betahuhn/cf-worker-redirect/commit/ba8877b)  Use pass value to ignore the route
+
+### Dependency updates
+
+- [`e69be55`](https://github.com/betahuhn/cf-worker-redirect/commit/e69be55)  Bump webpack from 5.36.1 to 5.36.2
+- [`6666886`](https://github.com/betahuhn/cf-worker-redirect/commit/6666886)  Bump @typescript-eslint/eslint-plugin from 4.22.0 to 4.22.1
+- [`319336a`](https://github.com/betahuhn/cf-worker-redirect/commit/319336a)  Bump @typescript-eslint/parser from 4.22.0 to 4.22.1
+
 ## [v1.1.1] - 2021-05-03
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.1.1) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.1.0...v1.1.1) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.1.1) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.1.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.1.1.tar.gz))
