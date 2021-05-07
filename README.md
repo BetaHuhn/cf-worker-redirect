@@ -26,6 +26,12 @@ Clone this repo and cd into it:
 git clone https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
 ```
 
+Install the required development dependencies:
+
+```shell
+npm install
+```
+
 Next, start the interactive setup process:
 
 ```shell
