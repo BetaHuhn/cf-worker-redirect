@@ -24,6 +24,12 @@ If you want to deploy this Worker yourself, clone this repo and cd into it:
 git clone https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
 ```
 
+Install the required dev dependencies:
+
+```shell
+npm install
+```
+
 Next start the interactive deployment process:
 
 ```shell
