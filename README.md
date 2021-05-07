@@ -18,27 +18,19 @@ URL redirection running at the edge with Cloudflare Workers and Worker KV.
 
 ## 🚀 Get started
 
-Ensure you have [`wrangler`](https://github.com/cloudflare/wrangler) installed. If not, install it with `npm i @cloudflare/wrangler -g`.
-
-Clone this repo and cd into it:
+If you want to deploy this Worker yourself, clone this repo and cd into it:
 
 ```shell
 git clone https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
 ```
 
-Install the required development dependencies:
+Next start the interactive deployment process:
 
 ```shell
-npm install
+npm run deploy
 ```
 
-Next, start the interactive setup process:
-
-```shell
-npm run setup-worker
-```
-
-You will be asked to input a few values specific to your CloudFlare Account and the program will guide you through the process of deploying the Worker.
+You will be asked to login to CloudFlare if not already authenticated. The programm will guide you through the process of setting up and deploying the Worker under your own CloudFlare Account.
 
 ## 📚 Usage
 
@@ -123,7 +115,7 @@ wrangler generate new-worker https://github.com/betahuhn/cf-worker-redirect && c
 Next generate the `wrangler.toml` from the given template:
 
 ```shell
-npm run generate-worker
+npm run generate
 ```
 
 Set your account id in `wrangler.toml`, which can be found on your [Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers).
