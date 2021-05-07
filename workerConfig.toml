@@ -1,0 +1,4 @@
+name = "redirect-worker"
+type = "webpack"
+webpack_config = "webpack.config.js"
+kv_namespaces = [ "REDIRECT_KV" ]

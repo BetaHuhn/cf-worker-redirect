@@ -18,31 +18,21 @@ URL redirection running at the edge with Cloudflare Workers and Worker KV.
 
 ## 🚀 Get started
 
-Ensure you have [`wrangler`](https://github.com/cloudflare/wrangler) installed and configured, then create a new Worker based on this repo:
+Ensure you have [`wrangler`](https://github.com/cloudflare/wrangler) installed. If not, install it with `npm i @cloudflare/wrangler -g`.
+
+Clone this repo and cd into it:
 
 ```shell
-wrangler generate cf-worker-redirect https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
+git clone https://github.com/betahuhn/cf-worker-redirect && cd cf-worker-redirect
 ```
 
-Next generate the wrangler.toml from the given template:
+Next, start the interactive setup process:
 
 ```shell
-cp wranglerTemplate.toml wrangler.toml
+npm run setup-worker
 ```
 
-Set your account id in `wrangler.toml`, which can be found on your [Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers).
-
-Create a KV namespace for cf-worker-redirect:
-
-```shell
-wrangler kv:namespace create "REDIRECT_KV"
-```
-
-You will be instructed to append some content to `wrangler.toml`.
-
-Publish your Worker and start using it: `wrangler publish`
-
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/BetaHuhn/cf-worker-redirect)
+You will be asked to input a few values specific to your CloudFlare Account and the program will guide you through the process of deploying the Worker.
 
 ## 📚 Usage
 
@@ -115,6 +105,34 @@ Example with a Worker running at example.com:
 A user requesting example.com/blog-post-test?ref=Twitter will be redirected to https://example.com/blog/posts/test?ref=Twitter.
 
 > If the specified target URL would have been `https://example.com/blog/posts/test?ref=Campaign` then the parameter `ref=Twitter` would have been ignored
+
+## 🔨 Manual Setup
+
+If you want to reuse the code for this Worker, generate a new one with [`wrangler`](https://github.com/cloudflare/wrangler):
+
+```shell
+wrangler generate new-worker https://github.com/betahuhn/cf-worker-redirect && cd new-worker
+```
+
+Next generate the `wrangler.toml` from the given template:
+
+```shell
+npm run generate-worker
+```
+
+Set your account id in `wrangler.toml`, which can be found on your [Workers Dashboard](https://dash.cloudflare.com/?to=/:account/workers).
+
+Create a KV namespace for cf-worker-redirect:
+
+```shell
+wrangler kv:namespace create "REDIRECT_KV"
+```
+
+You will be instructed to append some content to the `wrangler.toml` file.
+
+Publish your Worker with: `wrangler publish`
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/BetaHuhn/cf-worker-redirect)
 
 ## 💻 Available commands
 
