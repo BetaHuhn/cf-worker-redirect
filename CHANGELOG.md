@@ -1,3 +1,11 @@
+## [v1.2.1] - 2021-05-10
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.1) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.0...v1.2.1) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.1) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.1.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.1.tar.gz))
+
+### Dependency updates
+
+- [`8ff4eef`](https://github.com/betahuhn/cf-worker-redirect/commit/8ff4eef)  Bump webpack-cli from 4.6.0 to 4.7.0
+
 ## [v1.2.0] - 2021-05-06
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.0) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.1.1...v1.2.0) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.0) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.0.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.0.tar.gz))
