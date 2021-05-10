@@ -20,12 +20,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run build command
-        run: npm run build
+      - name: Generate wrangler.toml
+        run: npm run generate
+        env: 
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_KV_NAMESPACE_REDIRECT_KV: ${{ secrets.CF_KV_NAMESPACE_REDIRECT_KV }}
+          CF_WORKERS_DEV: true
 
       - name: Publish to Cloudflare with Wrangler
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-        env: 
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
