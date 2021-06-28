@@ -1,3 +1,16 @@
+## [v1.2.8] - 2021-06-28
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.8) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.7...v1.2.8) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.8) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.8.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.8.tar.gz))
+
+### Dependency updates
+
+- [`9028707`](https://github.com/betahuhn/cf-worker-redirect/commit/9028707)  Bump worker-setup from 1.4.5 to 1.4.6
+- [`6237775`](https://github.com/betahuhn/cf-worker-redirect/commit/6237775)  Bump eslint from 7.28.0 to 7.29.0
+- [`cb71aab`](https://github.com/betahuhn/cf-worker-redirect/commit/cb71aab)  Bump @types/chai from 4.2.18 to 4.2.19
+- [`31c5c47`](https://github.com/betahuhn/cf-worker-redirect/commit/31c5c47)  Bump webpack from 5.39.1 to 5.40.0
+- [`64aef6a`](https://github.com/betahuhn/cf-worker-redirect/commit/64aef6a)  Bump @typescript-eslint/eslint-plugin from 4.27.0 to 4.28.0
+- [`906a663`](https://github.com/betahuhn/cf-worker-redirect/commit/906a663)  Bump @typescript-eslint/parser from 4.27.0 to 4.28.0
+
 ## [v1.2.7] - 2021-06-21
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.7) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.6...v1.2.7) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.7) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.7.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.7.tar.gz))
