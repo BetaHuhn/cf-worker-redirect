@@ -43,7 +43,7 @@
 		"rimraf": "^3.0.2",
 		"service-worker-mock": "^2.0.5",
 		"ts-loader": "^8.3.0",
-		"typescript": "^4.3.4",
+		"typescript": "^4.3.5",
 		"webpack": "^5.41.1",
 		"webpack-cli": "^4.7.2",
 		"worker-setup": "^1.4.7"
