@@ -37,7 +37,7 @@
 		"@typescript-eslint/parser": "^4.28.2",
 		"eslint": "^7.30.0",
 		"@types/chai": "^4.2.19",
-		"@types/mocha": "^8.2.2",
+		"@types/mocha": "^8.2.3",
 		"chai": "^4.3.4",
 		"mocha": "^8.4.0",
 		"rimraf": "^3.0.2",
