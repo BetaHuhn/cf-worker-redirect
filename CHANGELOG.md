@@ -1,3 +1,20 @@
+## [v1.2.10] - 2021-07-12
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.10) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.9...v1.2.10) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.10) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.10.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.10.tar.gz))
+
+### Dependency updates
+
+- [`e91fa98`](https://github.com/betahuhn/cf-worker-redirect/commit/e91fa98)  Bump webpack from 5.41.1 to 5.42.0
+- [`4a721fa`](https://github.com/betahuhn/cf-worker-redirect/commit/4a721fa)  Bump eslint from 7.29.0 to 7.30.0
+- [`729fad7`](https://github.com/betahuhn/cf-worker-redirect/commit/729fad7)  Bump @typescript-eslint/eslint-plugin from 4.28.1 to 4.28.2
+- [`aca1ba8`](https://github.com/betahuhn/cf-worker-redirect/commit/aca1ba8)  Bump webpack from 5.42.0 to 5.42.1
+- [`f188dc5`](https://github.com/betahuhn/cf-worker-redirect/commit/f188dc5)  Bump @typescript-eslint/parser from 4.28.1 to 4.28.2
+- [`530e196`](https://github.com/betahuhn/cf-worker-redirect/commit/530e196)  Bump webpack from 5.42.1 to 5.43.0
+- [`fd3889c`](https://github.com/betahuhn/cf-worker-redirect/commit/fd3889c)  Bump @types/mocha from 8.2.2 to 8.2.3
+- [`3f0931a`](https://github.com/betahuhn/cf-worker-redirect/commit/3f0931a)  Bump @types/chai from 4.2.19 to 4.2.20
+- [`5d8ab13`](https://github.com/betahuhn/cf-worker-redirect/commit/5d8ab13)  Bump webpack from 5.43.0 to 5.44.0
+- [`86a26f2`](https://github.com/betahuhn/cf-worker-redirect/commit/86a26f2)  Bump @types/chai from 4.2.20 to 4.2.21
+
 ## [v1.2.9] - 2021-07-05
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.9) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.8...v1.2.9) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.9) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.9.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.9.tar.gz))
