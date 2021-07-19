@@ -1,3 +1,13 @@
+## [v1.2.11] - 2021-07-19
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.11) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.10...v1.2.11) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.11) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.11.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.11.tar.gz))
+
+### Dependency updates
+
+- [`67d0d4b`](https://github.com/betahuhn/cf-worker-redirect/commit/67d0d4b)  Bump worker-setup from 1.4.7 to 1.4.8
+- [`6f9032e`](https://github.com/betahuhn/cf-worker-redirect/commit/6f9032e)  Bump @typescript-eslint/eslint-plugin from 4.28.2 to 4.28.3
+- [`c5731fa`](https://github.com/betahuhn/cf-worker-redirect/commit/c5731fa)  Bump @typescript-eslint/parser from 4.28.2 to 4.28.3
+
 ## [v1.2.10] - 2021-07-12
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.10) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.9...v1.2.10) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.10) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.10.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.10.tar.gz))
