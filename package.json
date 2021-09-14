@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@betahuhn/config": "^1.2.0",
 		"@cloudflare/workers-types": "^2.2.2",
-		"@typescript-eslint/eslint-plugin": "^4.31.0",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
 		"@typescript-eslint/parser": "^4.31.0",
 		"eslint": "^7.32.0",
 		"@types/chai": "^4.2.21",
@@ -46,6 +46,6 @@
 		"typescript": "^4.4.3",
 		"webpack": "^5.52.1",
 		"webpack-cli": "^4.8.0",
-		"worker-setup": "^1.4.14"
+		"worker-setup": "^1.4.15"
 	}
 }
