@@ -30,13 +30,13 @@ Install the required dev dependencies:
 npm install
 ```
 
-Next start the interactive deployment process:
+Next start the interactive deployment process with [worker-setup](https://github.com/BetaHuhn/worker-setup):
 
 ```shell
 npm run deploy
 ```
 
-You will be asked to login to CloudFlare if not already authenticated. The programm will guide you through the process of setting up and deploying the Worker under your own CloudFlare Account.
+You will be asked to login to Cloudflare if not already authenticated. The programm will guide you through the process of setting up and deploying the Worker under your own Cloudflare Account.
 
 ## 📚 Usage
 

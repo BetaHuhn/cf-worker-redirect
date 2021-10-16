@@ -2,3 +2,5 @@ name = "redirect-worker"
 type = "webpack"
 webpack_config = "webpack.config.js"
 kv_namespaces = [ "REDIRECT_KV" ]
+instructions = "To start using cf-worker-redirect, open your Workers KV Dashboard and add a new redirect.\nMore information in the projects README.md."
+compatibility_date = "2021-10-16"
