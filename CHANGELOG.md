@@ -1,3 +1,14 @@
+## [v1.2.24] - 2021-10-18
+
+[Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.24) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.23...v1.2.24) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.24) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.24.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.24.tar.gz))
+
+### Dependency updates
+
+- [`1c24f1f`](https://github.com/betahuhn/cf-worker-redirect/commit/1c24f1f)  Bump webpack from 5.58.0 to 5.58.1
+- [`f34a09e`](https://github.com/betahuhn/cf-worker-redirect/commit/f34a09e)  Bump worker-setup from 1.4.16 to 1.4.17
+- [`91408bc`](https://github.com/betahuhn/cf-worker-redirect/commit/91408bc)  Bump typescript from 4.4.3 to 4.4.4
+- [`23050ac`](https://github.com/betahuhn/cf-worker-redirect/commit/23050ac)  Bump webpack from 5.58.1 to 5.58.2
+
 ## [v1.2.23] - 2021-10-11
 
 [Release notes](https://github.com/betahuhn/cf-worker-redirect/releases/tag/v1.2.23) · [Compare](https://github.com/betahuhn/cf-worker-redirect/compare/v1.2.22...v1.2.23) · [Tag](https://github.com/betahuhn/cf-worker-redirect/tree/v1.2.23) · Archive ([zip](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.23.zip) · [tar.gz](https://github.com/betahuhn/cf-worker-redirect/archive/v1.2.23.tar.gz))
