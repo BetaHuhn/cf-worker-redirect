@@ -34,7 +34,7 @@
 		"@betahuhn/config": "^1.2.0",
 		"@cloudflare/workers-types": "^2.2.2",
 		"@types/chai": "^4.2.22",
-		"@types/mocha": "^8.2.3",
+		"@types/mocha": "^9.1.1",
 		"@typescript-eslint/eslint-plugin": "^4.33.0",
 		"@typescript-eslint/parser": "^4.33.0",
 		"chai": "^4.3.4",
