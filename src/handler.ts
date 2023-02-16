@@ -48,11 +48,9 @@ export async function handleRequest(request: Request): Promise<Response> {
 	// Default to using targetUrl path
 	let redirectPath = targetUrl.pathname;
 	// Check if the request has a path though
-	if (!emptyPath(requestPath)) {
-		// If request and target have a path, use target, else use requesters path
-		redirectPath = emptyPath(targetUrl.pathname)
-			? requestPath
-			: targetUrl.pathname;
+	if (!emptyPath(requestPath) && emptyPath(targetUrl.pathname)) {
+		// Since request has a path but target does not, use requestPath
+		redirectPath = requestPath;
 	}
 
 	// Construct a redirect url using target host and redirect path
